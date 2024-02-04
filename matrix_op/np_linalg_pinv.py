@@ -1,0 +1,12 @@
+import numpy as np; np.random.seed(0)
+
+def main():
+    A = np.random.uniform(0., 1., (2,2))
+    print(A)
+    print()
+
+    pinv_A = np.linalg.pinv(A) # psudo-inverse
+    print(pinv_A)
+
+if __name__ == "__main__":
+    main()
